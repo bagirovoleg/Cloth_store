@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Store - Каталог</title>
+    <title>Store - Cataloge</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static   'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="{% url    'products:products' %}">Cataloge <i class="fas fa-shopping-bag"></i> </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="users/login.html">Log in <i class="fas fa-sign-in-alt"></i></a>
+                    <a class="nav-link" href="{% url    'users:login' %}">Log in <i class="fas fa-sign-in-alt"></i></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
