@@ -1,0 +1,10 @@
+{
+  "optimize-canvas-connections:optimize-shortest-path-selection": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "L"
+    }
+  ]
+}

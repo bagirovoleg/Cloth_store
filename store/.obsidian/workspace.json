@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "172ae13b9566149b",
+    "type": "split",
+    "children": [
+      {
+        "id": "80979ab95a4214eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f48c41222253920",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "078ad76626ea370d",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f892baffc292ccb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc5ee06036a912cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f6cc884d4b0619b0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#STORE",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a33fcd3ca10e1e55",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "26277d18559271f3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "f74ded40e650c726",
+    "type": "split",
+    "children": [
+      {
+        "id": "3966a5474810240f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d607d77539a4fbdc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9e0c8682ba1d47b0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a07840e238151dd8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dda5173f66a752a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false
+    }
+  },
+  "active": "1f48c41222253920",
+  "lastOpenFiles": [
+    "USER models.py.canvas",
+    "PROJECT.canvas",
+    "__pycache__/manage.cpython-310.pyc",
+    "__pycache__",
+    "users/__pycache__/forms.cpython-310.pyc",
+    "db.sqlite3-journal",
+    "users/migrations/__pycache__/0002_alter_user_image.cpython-310.pyc",
+    "users/migrations/0002_alter_user_image.py",
+    "users/templates/register.html",
+    "users/templates/profile.html",
+    "users/templates/login.html",
+    "users/templates/users/base.html",
+    "Без названия.canvas"
+  ]
+}
