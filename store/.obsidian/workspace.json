@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "80979ab95a4214eb",
+        "id": "4400dc5d229f7109",
         "type": "tabs",
         "children": [
           {
-            "id": "1f48c41222253920",
+            "id": "f505326bf2dac50b",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "PROJECT.canvas",
+                "file": "Basket.canvas",
                 "viewState": {
-                  "x": 5856.582113566414,
-                  "y": -3873.8355256300183,
-                  "zoom": -2.8428527832031247
+                  "x": 5254.321669854197,
+                  "y": -2458.4253611243103,
+                  "zoom": -1.9223551432291668
                 }
               }
             }
@@ -76,13 +76,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f74ded40e650c726",
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJECT.canvas",
+                "file": "Basket.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJECT.canvas",
+                "file": "Basket.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJECT.canvas"
+                "file": "Basket.canvas"
               }
             }
           }
@@ -146,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,8 +158,13 @@
       "random-note:Open random note": false
     }
   },
-  "active": "1f48c41222253920",
+  "active": "f505326bf2dac50b",
   "lastOpenFiles": [
+    "PROJECT.canvas",
+    "Basket.canvas",
+    "stop_server.ipynb",
+    "Basket.md",
+    "BASKETS.md",
     "copy.sqlite3-journal",
     "products/migrations/__pycache__/0002_basket.cpython-310.pyc",
     "products/migrations/0002_basket.py",
@@ -173,8 +175,6 @@
     "store-template-course-master/README.md",
     "store-template-course-master/vendor/fontawesome/fontawesome-icons.js",
     "store-template-course-master/vendor/fontawesome",
-    "store-template-course-master/vendor/bootstrap/css/bootstrap-reboot.min.css.map",
-    "store-template-course-master/vendor/bootstrap/css/bootstrap-grid.min.css.map",
     "store-template-course-master/vendor/img/wallpaper.jpg",
     "store-template-course-master/vendor/img/products/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png",
     "store-template-course-master/vendor/img/products/Brown-sports-oversized-top-ASOS-DESIGN.png",
@@ -186,7 +186,6 @@
     "store-template-course-master/vendor/img/slides/slide-2.jpg",
     "store-template-course-master/vendor/img/users/default_avatar.jpg",
     "USER models.py.canvas",
-    "PROJECT.canvas",
     "Без названия.canvas"
   ]
 }
