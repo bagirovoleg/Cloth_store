@@ -15,9 +15,9 @@
               "state": {
                 "file": "PROJECT.canvas",
                 "viewState": {
-                  "x": 4279.088793184511,
-                  "y": -4452.941958012396,
-                  "zoom": 0.0653767903645836
+                  "x": 5856.582113566414,
+                  "y": -3873.8355256300183,
+                  "zoom": -2.8428527832031247
                 }
               }
             }
@@ -163,18 +163,30 @@
   },
   "active": "1f48c41222253920",
   "lastOpenFiles": [
+    "copy.sqlite3-journal",
+    "products/migrations/__pycache__/0002_basket.cpython-310.pyc",
+    "products/migrations/0002_basket.py",
+    "users/templates/profile.html",
+    "store-template-course-master/index copy.html",
+    "store-template-course-master/products.html",
+    "store-template-course-master/index.html",
+    "store-template-course-master/README.md",
+    "store-template-course-master/vendor/fontawesome/fontawesome-icons.js",
+    "store-template-course-master/vendor/fontawesome",
+    "store-template-course-master/vendor/bootstrap/css/bootstrap-reboot.min.css.map",
+    "store-template-course-master/vendor/bootstrap/css/bootstrap-grid.min.css.map",
+    "store-template-course-master/vendor/img/wallpaper.jpg",
+    "store-template-course-master/vendor/img/products/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png",
+    "store-template-course-master/vendor/img/products/Brown-sports-oversized-top-ASOS-DESIGN.png",
+    "store-template-course-master/vendor/img/products/Black-Nike-Heritage-backpack.png",
+    "store-template-course-master/vendor/img/products/Blue-jacket-The-North-Face.png",
+    "store-template-course-master/vendor/img/products/Black-Dr-Martens-shoes.png",
+    "store-template-course-master/vendor/img/products/Adidas-hoodie.png",
+    "store-template-course-master/vendor/img/slides/slide-3.jpg",
+    "store-template-course-master/vendor/img/slides/slide-2.jpg",
+    "store-template-course-master/vendor/img/users/default_avatar.jpg",
     "USER models.py.canvas",
     "PROJECT.canvas",
-    "__pycache__/manage.cpython-310.pyc",
-    "__pycache__",
-    "users/__pycache__/forms.cpython-310.pyc",
-    "db.sqlite3-journal",
-    "users/migrations/__pycache__/0002_alter_user_image.cpython-310.pyc",
-    "users/migrations/0002_alter_user_image.py",
-    "users/templates/register.html",
-    "users/templates/profile.html",
-    "users/templates/login.html",
-    "users/templates/users/base.html",
     "Без названия.canvas"
   ]
 }
