@@ -1,9 +1,8 @@
 {% if baskets %}
-    <div class="col-lg-5">
-        <h4 class="mt-3 mb-3 d-flex justify-content-between align-items-center mb-3">
-            Trash <span class="badge badge-secondary badge-pill">3</span>
-        </h4>
-        {% for basket in baskets %}
+    <h4 class="mt-3 mb-3 d-flex justify-content-between align-items-center mb-3">
+        Basket <span class="badge badge-secondary badge-pill">{{ total_quantity }}</span>
+    </h4>
+    {% for basket in baskets %}
         <div class="card mb-3">
             <div class="card-body">
                 <h5 class="card-title">{{ basket.product.name }}</h5>
@@ -26,17 +25,16 @@
                 </li>
             </ul>
         </div>
-        {% endfor %}
-        <div class="card mb-3">
-            <div class="card-footer">
-                <p class="float-left">Summary</p>
-                <h4 class="float-right">99 $</h4>
-            </div>
+    {% endfor %}
+    <div class="card mb-3">
+        <div class="card-footer">
+            <p class="float-left">Summary</p>
+            <h4 class="float-right">{{ total_sum }} $</h4>
         </div>
-        <a class="btn btn-success btn-lg float-right" href="../orders/order-create.html">
-            Checkout
-        </a>
     </div>
+    <a class="btn btn-success btn-lg float-right" href="../orders/order-create.html">
+        Checkout
+    </a>
 {% else %}
     <h4 class="mt-3 mb-3 d-flex justify-content-between align-items-center mb-3">
         Basket is empty <span class="badge badge-secondary badge-pill">0</span>
