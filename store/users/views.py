@@ -1,11 +1,13 @@
 from django.shortcuts import render, HttpResponseRedirect, redirect, HttpResponse
 from django.contrib import auth, messages
 from django.urls import reverse, reverse_lazy
+
 from products.models import Basket, Product, ProductCategory
 from users.models import User
-from django.contrib.auth.decorators import login_required
 from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
 from django.views.generic.edit import CreateView, UpdateView
+from django.contrib.messages.views import SuccessMessageMixin
+from common.views import TitleMixin
 
 
 def login(request):
@@ -24,30 +26,40 @@ def login(request):
     return render(request, 'users/login.html', context)
 
 
-class UserRegistrationView(CreateView):
+class UserRegistrationView(TitleMixin, SuccessMessageMixin, CreateView):
     model = User
     form_class = UserRegistrationForm
     template_name = 'users/registration.html'
     success_url = reverse_lazy('users:login')
+    success_message = 'You have been successfully registered'
+    title = 'Store - Registration'
 
     def get_context_data(self, **kwargs):
         context = super(UserRegistrationView, self).get_context_data(**kwargs)
-        context['title'] = 'Store - Registration'
+        # context['title'] = 'Store - Registration'
         return context
 
-class UserProfileView(UpdateView):
+
+class UserProfileView(TitleMixin, SuccessMessageMixin, UpdateView):
     model = User
     form_class = UserProfileForm
     template_name = 'users/profile.html'
+    success_message = 'You have been successfully change your date'
+    title = 'Store - Profile'
 
     def get_success_url(self):
-        return reverse_lazy('users:profile', args=(self.object.id),)
+        return reverse_lazy('users:profile', args=(self.object.id), )
 
     def get_context_data(self, **kwargs):
         context = super(UserProfileView, self).get_context_data(**kwargs)
-        context['title'] = 'Store - Profile'
+        # context['title'] = 'Store - Profile'
         context['baskets'] = Basket.objects.filter(user=self.object)
         return context
+
+
+def logout(request):
+    auth.logout(request)
+    return HttpResponseRedirect(reverse('index:index'))
 
 # @login_required
 # def profile(request):
@@ -77,8 +89,3 @@ class UserProfileView(UpdateView):
 #         'total_quantity': total_quantity,
 #     }
 #     return render(request, 'users/profile.html', context)
-
-
-def logout(request):
-    auth.logout(request)
-    return HttpResponseRedirect(reverse('index:index'))
