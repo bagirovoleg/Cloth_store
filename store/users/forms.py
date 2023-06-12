@@ -1,7 +1,12 @@
+import uuid
+from datetime import timedelta
+
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
 from django import forms
+from django.utils.timezone import now
+from django.core.mail import send_mail
 
-from users.models import User
+from users.models import User, EmailVerification
 
 
 class UserLoginForm(AuthenticationForm):
@@ -31,15 +36,24 @@ class UserRegistrationForm(UserCreationForm):
         'class': 'form-control py-4', 'placeholder': 'Enter your email address'
     }))
 
-    # password1 = forms.CharField(widget=forms.PasswordInput(attrs={
-    # 'class': 'form-control py-4', 'placeholder': 'Enter the password'
-    # }))
-    # password2 = forms.CharField(widget=forms.PasswordInput(attrs={
-    # 'class': 'form-control py-4', 'placeholder': 'Repeat the password'
-    # }))
     class Meta:
         model = User
         fields = ('first_name', 'last_name', 'username', 'email', 'password1', 'password2')
+
+    def save(self, commit=True):
+        user = super(UserRegistrationForm, self).save(commit=True)
+        expiration = now() + timedelta(hours=24)
+        record = EmailVerification.objects.create(code=uuid, user=user, expiration=expiration)
+
+    def send_verification_email(self):
+        send_mail(
+            "Subject here",
+            "Here is the test message.",
+            "from@example.com",
+            [self.users.email],
+            fail_silently=False,
+        )
+
 
 
 class UserProfileForm(UserChangeForm):
